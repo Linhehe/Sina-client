@@ -89,10 +89,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.me', {
-      url: '/me',
+    .state('tab.i', {
+      url: '/i',
       views: {
-        'tab-me': {
+        'tab-i': {
           templateUrl: 'templates/tab-me.html',
           controller: 'MeCtrl'
         }

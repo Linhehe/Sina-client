@@ -1,16 +1,32 @@
-<ion-view view-title="Chats">
+<ion-view view-title="消息">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-positive" style="color: darkgray; font-size: 15px;">发起聊天</button>
+  </ion-nav-buttons>
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+    <div class="list">
+      <a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding" ng-repeat="feature in features">
+        <img src="{{feature.icon}}" style="width: 15%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 2.5vh;">{{feature.title}}</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 2.5vh; color: #C5C5C5;"></i>
+      </a>
+      <a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding">
+        <img src="img/ionic.png" style="width: 15%; float: left;"/>
+        <!--<span style="float: left; font-size: 20px; margin-left: 3%; margin-top: 2.5vh;">123</span>-->
+        <div style="float: left; margin-left: 3%; margin-top: 0.5vh;">
+          <div style="font-size: 3vh;">Linhehe</div>
+          <div style="font-size: 2vh; color: darkgray;">[图片]</div>
+        </div>
+        <span style="float: right; font-size: 2vh; color: #C5C5C5;">7-19</span>
+      </a>
+    </div>
   </ion-content>
 </ion-view>
+
+<style>
+  a:link{
+    color: #000;
+  }
+  a:visited{
+    color: #000;
+  }
+</style>

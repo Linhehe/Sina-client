@@ -1,28 +1,72 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
+<ion-view view-title="我">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-positive" style="color: darkgray; font-size: 15px;">设置</button>
+  </ion-nav-buttons>
+  <ion-content style="background-color: #EAE9EA;">
+
+    <div style="height: 14vh; width: 100%; background-color: white; margin-top: 1.5vh;" class="padding">
+      <img src="img/image1.jpg" style="width: 20%; float: left;"/>
+      <div style="float: left; margin-left: 3vw; height: 90%; width: 70%; padding-top: 2%; padding-bottom: 2%;">
+        <div style="font-size: 7vw;">Linhehe</div>
+        <div style="margin-top: 2vh; font-size: 4.5vw;">123</div>
+      </div>
+      <i class="icon  ion-ios-arrow-right" style="font-size: 8vw; float: right; margin-top: 2.5vh; color: darkgray;"></i>
+    </div>
+
+    <div style="background-color: white; height: 10vh; width: 100%; border-top: 1px solid #EAE9EA;">
+      <div style="float: left; width: 33.3%; height: 100%; padding-top: 1.8vh;" align="center">
+        <div style="font-size: 5vw; font-weight: 400;">123</div>
+        <div style="font-size: 3vw; color: gray;">微博</div>
+      </div>
+      <div style="float: left; width: 33.3%; height: 100%; padding-top: 1.8vh;" align="center">
+        <div style="font-size: 5vw; font-weight: 400;">123</div>
+        <div style="font-size: 3vw; color: gray;">微博</div>
+      </div>
+      <div style="float: left; width: 33.3%; height: 100%; padding-top: 1.8vh;" align="center">
+        <div style="font-size: 5vw; font-weight: 400;">123</div>
+        <div style="font-size: 3vw; color: gray;">微博</div>
       </div>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="background-color: white; height: 8vh; padding-top: 1.3vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;" ng-repeat="module1 in modules1">
+        <img src="{{module1.icon}}" style="width: 10%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 0.5vh;">{{module1.title}}</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 0.5vh; color: #C5C5C5;"></i>
       </div>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="background-color: white; height: 8vh; padding-top: 1.3vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;" ng-repeat="module2 in modules2">
+        <img src="{{module2.icon}}" style="width: 10%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 0.5vh;">{{module2.title}}</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 0.5vh; color: #C5C5C5;"></i>
       </div>
     </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="background-color: white; height: 8vh; padding-top: 1.3vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;" ng-repeat="module3 in modules3">
+        <img src="{{module3.icon}}" style="width: 10%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 0.5vh;">{{module3.title}}</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 0.5vh; color: #C5C5C5;"></i>
+      </div>
+    </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="background-color: white; height: 8vh; padding-top: 1.3vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;">
+        <img src="img/ionic.png" style="width: 10%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 0.5vh;">Linhehe</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 0.5vh; color: #C5C5C5;"></i>
+      </div>
+    </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="background-color: white; height: 8vh; padding-top: 1.3vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;">
+        <img src="img/ionic.png" style="width: 10%; float: left;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 0.5vh;">Linhehe</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 0.5vh; color: #C5C5C5;"></i>
+      </div>
+    </div>
+
   </ion-content>
 </ion-view>

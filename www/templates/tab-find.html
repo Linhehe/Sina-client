@@ -1,28 +1,59 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
+<ion-view>
+  <ion-nav-buttons side="primary">
+    <div class="bar bar-header padding">
+      <label class="item-input-wrapper" style="width: 100%;">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" style="width: 90%; background-color: transparent; margin-left: 2vw;"/>
+      </label>
+    </div>
+  </ion-nav-buttons>
+  <ion-content style="background-color: #EAE9EA;">
+
+    <ion-slide-box pager-click="navSlide(index)" auto-play="true" does-continue="true" style="margin-top: 1.5vh;">
+      <ion-slide ng-repeat="(key,value) in Photos" ng-click="dianji()">
+        <img ng-src="{{value.src}}" style="height: 20vh; width: 100%;">
+      </ion-slide>
+    </ion-slide-box>
+
+    <div style="width: 100%; height: 15vh; background-color: white; margin-top: 1vh;">
+      <div style="width: 100%; height: 49%;">
+        <div style="width: 49.8%; height: 100%; float: left; padding-top: 2.5vh;" align="center">1</div>
+        <div style="width: 0.2%; height: 80%; background-color: lightgray; float: left; margin-top: 1vh;"></div>
+        <div style="width: 49.8%; height: 100%; float: left; padding-top: 2.5vh;" align="center">2</div>
+      </div>
+      <div style="width: 100%; height: 0.7%; padding: 0; margin-top: 0.3%;">
+        <div style="background-color: lightgray; width: 46%; height: 100%; float: left; margin-left: 2%; margin-right: 2%;"></div>
+        <div style="background-color: lightgray; width: 46%; height: 100%; float: left; margin-left: 2%; margin-right: 2%;"></div>
+      </div>
+      <div style="width: 100%; height: 49%;">
+        <div style="width: 49.8%; height: 100%; float: left; padding-top: 2.5vh;" align="center">3</div>
+        <div style="width: 0.2%; height: 80%; background-color: lightgray; float: left; margin-top: 1vh;"></div>
+        <div style="width: 49.8%; height: 100%; float: left; padding-top: 2.5vh;" align="center">4</div>
       </div>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
-      </div>
+
+    <div class="list" style="margin-top: 1.5vh;">
+      <a href="#" style="background-color: white; width: 100%; display: block; float: left; height: 7vh; padding-top: 1.2vh; padding-left: 3vw; border-bottom: 1px solid #E1E1E1;" ng-repeat="module1 in modules1">
+        <img src="{{module1.icon}}" style="width: 8%; float: left;"/>
+        <span style="float: left; margin-left: 2vw; margin-top: 1%;">{{module1.title}}</span>
+      </a>
     </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
-      </div>
+
+    <div class="list" style="margin-top: 15vh;">
+      <a href="#" style="background-color: white; width: 100%; display: block; float: left; height: 7vh; padding-top: 1.2vh; padding-left: 3vw; border-bottom: 1px solid #E1E1E1;" ng-repeat="module2 in modules2">
+        <img src="{{module2.icon}}" style="width: 8%; float: left;"/>
+        <span style="float: left; margin-left: 2vw; margin-top: 1%;">{{module2.title}}</span>
+      </a>
     </div>
+
   </ion-content>
 </ion-view>
+
+<style>
+  a:link{
+    color: #000;
+  }
+  a:visited{
+    color: #000;
+  }
+</style>

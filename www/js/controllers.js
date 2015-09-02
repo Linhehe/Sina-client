@@ -1,12 +1,27 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {})
+.controller('HomeCtrl', function($scope) {
+    //
+    $scope.TitleClick = function(){
+      //
+      $scope.smallWindow = !$scope.smallWindow;
+    }
+  })
 
 .controller('MessagesCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+  $scope.features = [{
+    icon: 'img/ionic.png',
+    title: 'Linhehe'
+  },{
+    icon: 'img/ionic.png',
+    title: 'Linhehe'
+  },{
+    icon: 'img/ionic.png',
+    title: 'Linhehe'
+  },{
+    icon: 'img/ionic.png',
+    title: 'Linhehe'
+  }];
 })
 
 //.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -20,13 +35,42 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FindCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+    $scope.Photos = [
+      {'src': 'http://lorempixel.com/500/500'},
+      {'src': 'http://lorempixel.com/600/500'},
+      {'src': 'http://lorempixel.com/500/600'},
+      {'src': 'http://lorempixel.com/550/500'}
+    ];
+    //
+    $scope.modules1 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
+    //
+    $scope.modules2 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
 })
 
 .controller('MeCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+    //
+    $scope.modules1 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
+    //
+    $scope.modules2 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
+    //
+    $scope.modules3 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
 });
