@@ -3,22 +3,44 @@
     <button class="button button-clear button-positive" style="color: darkgray; font-size: 15px;">发起聊天</button>
   </ion-nav-buttons>
   <ion-content>
-    <div class="list">
-      <a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding" ng-repeat="feature in features">
-        <img src="{{feature.icon}}" style="width: 15%; float: left;"/>
-        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 2.5vh;">{{feature.title}}</span>
-        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 2.5vh; color: #C5C5C5;"></i>
-      </a>
-      <a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding">
-        <img src="img/ionic.png" style="width: 15%; float: left;"/>
-        <!--<span style="float: left; font-size: 20px; margin-left: 3%; margin-top: 2.5vh;">123</span>-->
-        <div style="float: left; margin-left: 3%; margin-top: 0.5vh;">
+
+    <div style="border-top: 1px solid #EAE9EA;">
+      <div style="background-color: white; height: 11vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;" ng-repeat="module1 in modules1">
+        <img src="{{module1.icon}}" style="width: 13%; float: left; margin-top: 2vh;"/>
+        <span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 3.5vh;">{{module1.title}}</span>
+        <i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 3.5vh; color: #C5C5C5;"></i>
+      </div>
+    </div>
+
+    <div>
+      <div style="background-color: white; height: 11vh; padding-left: 3vw; padding-right: 3vw; border-bottom: 1px solid #EAE9EA;" ng-repeat="module1 in modules1">
+        <img src="{{module1.icon}}" style="width: 13%; float: left; margin-top: 2vh;"/>
+        <div style="float: left; margin-left: 3%; margin-top: 2vh;">
           <div style="font-size: 3vh;">Linhehe</div>
           <div style="font-size: 2vh; color: darkgray;">[图片]</div>
         </div>
-        <span style="float: right; font-size: 2vh; color: #C5C5C5;">7-19</span>
-      </a>
+        <span style="float: right; font-size: 2vh; color: #C5C5C5; margin-top: 2vh;">7-19</span>
+        <!--<i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 3vh; color: #C5C5C5;"></i>-->
+      </div>
     </div>
+
+    <!--<div class="list">-->
+      <!--&lt;!&ndash;<a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding" ng-repeat="feature in features">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="{{feature.icon}}" style="width: 15%; float: left;"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<span style="float: left; font-size: 3vh; margin-left: 3%; margin-top: 2.5vh;">{{feature.title}}</span>&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="icon ion-ios-arrow-right" style="float: right; font-size: 4vh; margin-top: 2.5vh; color: #C5C5C5;"></i>&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+      <!--<a href="#" style="width: 100%; display: block; float: left; border-bottom: 1px solid #E1E1E1;" class="padding">-->
+        <!--<img src="img/ionic.png" style="width: 15%; float: left;"/>-->
+        <!--&lt;!&ndash;<span style="float: left; font-size: 20px; margin-left: 3%; margin-top: 2.5vh;">123</span>&ndash;&gt;-->
+        <!--<div style="float: left; margin-left: 3%; margin-top: 0.5vh;">-->
+          <!--<div style="font-size: 3vh;">Linhehe</div>-->
+          <!--<div style="font-size: 2vh; color: darkgray;">[图片]</div>-->
+        <!--</div>-->
+        <!--<span style="float: right; font-size: 2vh; color: #C5C5C5;">7-19</span>-->
+      <!--</a>-->
+    <!--</div>-->
+
   </ion-content>
 </ion-view>
 

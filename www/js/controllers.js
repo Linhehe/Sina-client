@@ -5,23 +5,38 @@ angular.module('starter.controllers', [])
     $scope.TitleClick = function(){
       //
       $scope.smallWindow = !$scope.smallWindow;
-    }
+    };
+    //
+    $scope.sorts = [
+      {title: '首页'},
+      {title: '首页'},
+      {title: '首页'},
+      {title: '首页'}
+    ];
   })
 
 .controller('MessagesCtrl', function($scope, Chats) {
-  $scope.features = [{
-    icon: 'img/ionic.png',
-    title: 'Linhehe'
-  },{
-    icon: 'img/ionic.png',
-    title: 'Linhehe'
-  },{
-    icon: 'img/ionic.png',
-    title: 'Linhehe'
-  },{
-    icon: 'img/ionic.png',
-    title: 'Linhehe'
-  }];
+    //
+    $scope.modules1 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
+    //
+    $scope.features = [{
+      icon: 'img/ionic.png',
+      title: 'Linhehe'
+    },{
+      icon: 'img/ionic.png',
+      title: 'Linhehe'
+    },{
+      icon: 'img/ionic.png',
+      title: 'Linhehe'
+    },{
+      icon: 'img/ionic.png',
+      title: 'Linhehe'
+    }];
 })
 
 //.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -48,6 +63,17 @@ angular.module('starter.controllers', [])
     ];
     //
     $scope.modules2 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'}
+    ];
+    //
+    $scope.modules3 = [
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
+      {icon: 'img/ionic.png', title: 'Linhehe'},
       {icon: 'img/ionic.png', title: 'Linhehe'},
       {icon: 'img/ionic.png', title: 'Linhehe'},
       {icon: 'img/ionic.png', title: 'Linhehe'},
