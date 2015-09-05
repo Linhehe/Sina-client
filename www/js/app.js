@@ -51,6 +51,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+      .state('dynamic', {
+        url: '/dynamic',
+        templateUrl: 'templates/friends-attention-dynamic.html',
+        controller: 'DynamicCtrl'
+      })
+
     .state('tab.messages', {
         url: '/messages',
         views: {

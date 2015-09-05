@@ -1,0 +1,34 @@
+<!--
+    主页左上角按钮点击跳转页面
+-->
+<ion-view view-title="好友关注动态">
+
+  <ion-nav-buttons side="left">
+    <!--<a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goHome()">首页</a>-->
+    <div style="margin-left: 2vw;" ng-click="goHome()">
+      <i class="icon ion-ios-arrow-left" style="font-size: 33px; float: left; margin-top: 0vh;"></i>
+      <span style="font-size: 15px; float: left; margin-top: 1.3vh; margin-left: 1vw;">首页</span>
+    </div>
+  </ion-nav-buttons>
+
+  <ion-content style="padding-top: 1vh;">
+    <div style="height: 22.5vh; width: 100%; border-bottom: 1px solid #EAE9EA;">
+      <div style="height: 28%; width: 100%; padding: 1.2vh 3vw; border-top: 1px solid #EAE9EA; border-bottom: 1px solid #EAE9EA;">
+        <span style="font-size: 16px; color: #6B90B7;">@123 </span> <span style="font-size: 16px;">等2个好友关注了</span>
+        <i class="ion-ios-arrow-down" style="font-size: 4vh; float: right; margin-right: 3vw;"></i>
+      </div>
+      <div style="padding: 1.3vh 3vw;">
+        <img src="img/ionic.png" style="border: 1px solid #EAE9EA; width: 25%; float: left;"/>
+        <div style="width: 50%; height: 100%; float: left; margin-left: 2vw;">
+          <div style="font-size: 16px; margin-bottom: 1vh;">我和渣男的狗血经历</div>
+          <div style="font-size: 14px; margin-bottom: 1vh;">每个加我的人都变得...</div>
+          <div style="font-size: 13px;">“一些女生是这样确定...</div>
+        </div>
+        <div style="width: 15%; float: right; margin-right: 3vw; margin-top: 2vh;" align="center">
+          <img src="img/ionic.png" style="width: 65%;"/>
+          <span style="font-size: 12px; position: absolute; right: 7.5vw; bottom: 4vh;">加关注</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

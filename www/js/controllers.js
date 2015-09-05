@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
+.controller('HomeCtrl', function($scope,$state) {
     //
     $scope.TitleClick = function(){
       //
@@ -13,7 +13,12 @@ angular.module('starter.controllers', [])
       {title: '首页'},
       {title: '首页'}
     ];
-  })
+    //
+    $scope.goDynamic = function(){
+      //
+      $state.go('dynamic');
+    }
+})
 
 .controller('MessagesCtrl', function($scope, Chats) {
     //
@@ -99,4 +104,11 @@ angular.module('starter.controllers', [])
       {icon: 'img/ionic.png', title: 'Linhehe'},
       {icon: 'img/ionic.png', title: 'Linhehe'}
     ];
+})
+
+.controller('DynamicCtrl', function($scope,$state){
+    //
+    $scope.goHome = function(){
+      $state.go('tab.home');
+    }
 });
