@@ -104,6 +104,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'MeCtrl'
         }
       }
+    })
+
+    .state('me_detail', {
+      url: '/me_detail',
+      templateUrl: 'templates/me-detail.html',
+      controller: 'MeDetailCtrl'
     });
 
     // if none of the above states are matched, use this as the fallback

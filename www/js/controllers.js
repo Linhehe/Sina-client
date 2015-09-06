@@ -86,7 +86,7 @@ angular.module('starter.controllers', [])
     ];
 })
 
-.controller('MeCtrl', function($scope) {
+.controller('MeCtrl', function($scope,$state) {
     //
     $scope.modules1 = [
       {icon: 'img/ionic.png', title: 'Linhehe'},
@@ -104,11 +104,23 @@ angular.module('starter.controllers', [])
       {icon: 'img/ionic.png', title: 'Linhehe'},
       {icon: 'img/ionic.png', title: 'Linhehe'}
     ];
+    //
+    $scope.gotoDetail = function(){
+      //
+      $state.go('me_detail');
+    };
 })
 
 .controller('DynamicCtrl', function($scope,$state){
     //
     $scope.goHome = function(){
       $state.go('tab.home');
+    }
+})
+
+.controller('MeDetailCtrl', function($scope,$state){
+    //
+    $scope.backtoMe = function(){
+      $state.go('tab.i');
     }
 });
