@@ -116,6 +116,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/weibo_all',
       templateUrl: 'templates/weibo_all.html',
       controller: 'WeiboAllCtrl'
+    })
+
+    .state('attention_all', {
+      url: '/attention_all',
+      templateUrl: 'templates/attention_all.html',
+      controller: 'AttentionAllCtrl'
     });
 
     // if none of the above states are matched, use this as the fallback

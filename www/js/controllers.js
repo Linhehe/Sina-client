@@ -113,6 +113,10 @@ angular.module('starter.controllers', [])
     $scope.gotoWeiboAll = function(){
       $state.go('weibo_all');
     }
+    //
+    $scope.gotoAttentionAll = function(){
+      $state.go('attention_all');
+    }
 })
 
 .controller('DynamicCtrl', function($scope,$state){
@@ -131,4 +135,27 @@ angular.module('starter.controllers', [])
 
 .controller('WeiboAllCtrl', function($scope,$state){
     //
-  });
+    $scope.backtoMe = function(){
+      $state.go('tab.i');
+    }
+  })
+
+.controller('AttentionAllCtrl', function($scope,$state){
+    //
+    $scope.backtoMe = function(){
+      $state.go('tab.i');
+    }
+    //
+    $scope.persons = [
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'}
+    ]
+});
