@@ -1,0 +1,30 @@
+<ion-view>
+
+  <ion-nav-buttons side="left">
+    <i class="ion-ios-arrow-left" style="font-size: 25px; margin-top: 1vh; color: black; float: left; margin-left: 2vw;" ng-click="backtoMe()"></i>
+    <span style="font-size: 15px; color: black; float: left; margin-top: 1.5vh; margin-left: 1vw;" ng-click="backtoMe()">我</span>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="primary">
+    <div class="bar bar-header" style="width: 60%; height: 100%; margin-left: 20%; margin-right: 20%;" align="center">
+      <div style="margin-right: 20%; margin-left: 20%; width: 60%; padding-top: 1.2vh; font-size: 17px;" align="center" ng-click="TitleClick()">
+        粉丝
+      </div>
+    </div>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+    <div style="height: 12.5vh; width: 100%; border-bottom: 1px solid #F9F9F9;" ng-repeat="person in persons">
+      <img src={{person.photo}} style="height: 8.5vh; width: 15.1vw; margin-top: 2vh; margin-left: 3vw; float: left;"/>
+      <div style="height: 7.5vh; width: 60%; float: left; margin-left: 3vw; margin-top: 2.5vh;">
+        <div style="font-size: 16px;">{{person.name}}</div>
+        <div style="font-size: 13px; margin-top: 1vh;">{{person.infor}}</div>
+      </div>
+      <div style="float: right; height: 5vh; width: 15.6vw; margin-top: 3.75vh; margin-right: 3vw; border: 1px solid #EDECED; border-radius: 2px;">
+        <img src="img/ionic.png" style="width: 6.67vw; height: 3.125vh; margin-left: 4vw; margin-top: 0.8vh;"/>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

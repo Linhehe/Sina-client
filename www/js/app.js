@@ -122,6 +122,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/attention_all',
       templateUrl: 'templates/attention_all.html',
       controller: 'AttentionAllCtrl'
+    })
+
+    .state('fans_all', {
+      url: '/fans_all',
+      templateUrl: 'templates/fans_all.html',
+      controller: 'FansAllCtrl'
     });
 
     // if none of the above states are matched, use this as the fallback

@@ -89,20 +89,20 @@ angular.module('starter.controllers', [])
 .controller('MeCtrl', function($scope,$state) {
     //
     $scope.modules1 = [
-      {icon: 'img/ionic.png', title: 'Linhehe'},
-      {icon: 'img/ionic.png', title: 'Linhehe'}
+      {icon: 'img/ionic.png', title: '新的好友'},
+      {icon: 'img/ionic.png', title: '微博等级'}
     ];
     //
     $scope.modules2 = [
-      {icon: 'img/ionic.png', title: 'Linhehe'},
-      {icon: 'img/ionic.png', title: 'Linhehe'},
-      {icon: 'img/ionic.png', title: 'Linhehe'}
+      {icon: 'img/ionic.png', title: '我的相册'},
+      {icon: 'img/ionic.png', title: '我的点评'},
+      {icon: 'img/ionic.png', title: '我的赞'}
     ];
     //
     $scope.modules3 = [
-      {icon: 'img/ionic.png', title: 'Linhehe'},
-      {icon: 'img/ionic.png', title: 'Linhehe'},
-      {icon: 'img/ionic.png', title: 'Linhehe'}
+      {icon: 'img/ionic.png', title: '微博会员'},
+      {icon: 'img/ionic.png', title: '微博运动'},
+      {icon: 'img/ionic.png', title: '微博支付'}
     ];
     //
     $scope.gotoDetail = function(){
@@ -112,10 +112,14 @@ angular.module('starter.controllers', [])
     //
     $scope.gotoWeiboAll = function(){
       $state.go('weibo_all');
-    }
+    };
     //
     $scope.gotoAttentionAll = function(){
       $state.go('attention_all');
+    };
+    //
+    $scope.gotoFansAll = function(){
+      $state.go('fans_all');
     }
 })
 
@@ -144,7 +148,7 @@ angular.module('starter.controllers', [])
     //
     $scope.backtoMe = function(){
       $state.go('tab.i');
-    }
+    };
     //
     $scope.persons = [
       {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
@@ -157,5 +161,25 @@ angular.module('starter.controllers', [])
       {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
       {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
       {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'}
-    ]
+    ];
+})
+
+.controller('FansAllCtrl', function($scope,$state){
+    //
+    $scope.backtoMe = function(){
+      $state.go('tab.i');
+    };
+    //
+    $scope.persons = [
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '缴收到货肺结核', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'},
+      {name: '的回复个三分', infor: '水电费哈利我看大家发垃圾分...', photo: 'img/image1.jpg'}
+    ];
 });
