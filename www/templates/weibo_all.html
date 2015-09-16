@@ -1,0 +1,78 @@
+<ion-view>
+
+  <ion-nav-buttons side="left">
+    <i class="ion-ios-arrow-left" style="font-size: 25px; margin-top: 1vh; color: black; float: left; margin-left: 2vw;" ng-click="backtoMe()"></i>
+    <span style="font-size: 15px; color: black; float: left; margin-top: 1.5vh; margin-left: 1vw;" ng-click="backtoMe()">我</span>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="primary">
+    <div class="bar bar-header" style="width: 60%; height: 100%; margin-left: 20%; margin-right: 20%;" align="center">
+      <div style="margin-right: 20%; margin-left: 20%; width: 60%; background-color: cornsilk; padding-top: 1.2vh;" align="center" ng-click="TitleClick()">全部微博</div>
+      <span ng-show="smallWindow" style="width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid #606060; position: absolute; bottom: 0; left: 47%;"></span>
+      <div ng-show="smallWindow" style="width: 90%; height: 40vh; position: absolute; left: 5%; bottom: -40vh; background-color: rgba(100, 100, 100, 0.9); border-radius: 4px;">
+        <div style="width: 100%; height: 70%; padding-top: 1.5vh;" align="center">
+          <a href="#" style="display: block; width: 90%; height: 20%; background-color: gray; margin-bottom: 1px; padding-top: 1vh; border-radius: 4px;" ng-repeat="sort in sorts">
+            <span style="float: left; margin-left: 2vw;">{{sort.title}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <i class="ion-ios-more" style="font-size: 25px; margin-top: 1vh; color: black; float: left; margin-right: 2vw;" ng-click="backtoMe()"></i>
+  </ion-nav-buttons>
+
+  <ion-content style="background-color: #F2F2F2;">
+
+    <div style="width: 100%; height: 7.5vh; background-color: #E3E4E6;" align="center">
+      <div style="width: 96%; height: 5.5vh; float: left; background-color: white; border-radius: 4px; margin-left: 2%; margin-top: 1vh;">
+        <i class="ion-ios-search" style="float: left; font-size: 4vh; margin-left: 3vw; margin-right: 2vw; margin-top: 0.5vh;"></i>
+        <input type="text" placeholder="搜我的微博" style="width: 80%; height: 100%; float: left;">
+      </div>
+    </div>
+
+    <div style="margin-top: 1.5vh;">
+      <div style="height: 5.25vh; width: 100%; border-bottom: 1px solid #DFDFDF; background-color: white;">
+        <img src="img/ionic.png" style="width: 3vh; margin-left: 3vw; margin-top: 1vh; float: left;"/>
+        <span style="margin-left: 1vw; float: left; margin-top: 0.8vh; color: #7C7C7C;">公开</span>
+        <i class="ion-ios-arrow-down" style="font-size: 15px; float: right; margin-right: 3vw; margin-top: 1vh; color: #7C7C7C;"></i>
+      </div>
+      <div style="padding: 2vh; float: left; width: 100%; background-color: white;">
+        <img src="img/image1.jpg" style="height: 6.25vh; float: left;"/>
+        <div style="float: left; margin-left: 2vw;">
+          <div style="font-size: 16px;">数据量大凤凰</div>
+          <div style="font-size: 12px;">4-1 来自Android客户端</div>
+        </div>
+        <div style="height: 5vh; width: 17.7vw; background-color: #FEFEFE; float: right; border: 1px solid #EFEFEF;" align="center">
+          <div style="color: #7C7C7C; font-size: 1px;">131</div>
+          <div style="color: #7C7C7C; font-size: 1px;">阅读</div>
+        </div>
+      </div>
+      <div style="height: 5vh; float: left; width: 100%; padding: 1vh 3vw; background-color: white;">
+        <div style="height: 75%; float: left;">索拉卡东方红的考虑是否就。</div>
+      </div>
+      <div style="width: 100%; float: left; padding: 1vh 3vw; background-color: #F7F7F7;">
+        <p>
+          <span style="color: #2870A7;">@开始的恢复</span>
+          <span>啥地方和阿里的飞机欧普...的；啊哈法律是南方阿拉山口飞机收到了；减肥哈离开我发货；来看是否案例</span>
+        </p>
+        <div>
+          <img src="img/image2.jpg" style="width: 50%;"/>
+        </div>
+      </div>
+      <div style="float: left; width: 100%; height: 5.25vh; border-top: 1px solid #EFEFEF; border-bottom: 1px solid #EFEFEF; background-color: white;">
+        <div style="width: 33.3%;height: 100%; float: left; padding-top: 1vh; border-right: 1px solid #EFEFEF;" align="center">
+          <i class="icon ion-android-open" style="font-size: 15px; color: #9B9B9B;">&nbsp;&nbsp;14</i>
+        </div>
+        <div style="width: 33.3%;height: 100%; float: left; padding-top: 1vh; border-right: 1px solid #EFEFEF;" align="center">
+          <i class="icon ion-android-textsms" style="font-size: 15px; color: #9B9B9B;">&nbsp;&nbsp;2</i>
+        </div>
+        <div style="width: 33.3%;height: 100%; float: left; padding-top: 1vh;" align="center">
+          <i class="icon ion-share" style="font-size: 15px; color: #9B9B9B;">&nbsp;&nbsp;29</i>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

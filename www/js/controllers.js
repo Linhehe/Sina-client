@@ -109,6 +109,10 @@ angular.module('starter.controllers', [])
       //
       $state.go('me_detail');
     };
+    //
+    $scope.gotoWeiboAll = function(){
+      $state.go('weibo_all');
+    }
 })
 
 .controller('DynamicCtrl', function($scope,$state){
@@ -123,4 +127,8 @@ angular.module('starter.controllers', [])
     $scope.backtoMe = function(){
       $state.go('tab.i');
     }
-});
+})
+
+.controller('WeiboAllCtrl', function($scope,$state){
+    //
+  });
