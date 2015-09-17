@@ -2,6 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope,$state) {
     //
+    // 更新。。。
+    //
     $scope.TitleClick = function(){
       //
       $scope.smallWindow = !$scope.smallWindow;
